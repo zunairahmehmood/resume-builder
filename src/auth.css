@@ -1,0 +1,167 @@
+.auth-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* LEFT IMAGE SECTION */
+.auth-image {
+  flex: 3;
+  background:
+    linear-gradient(
+      rgba(168, 85, 247, 0.65),
+      rgba(236, 72, 153, 0.65)
+    ),
+    url("./assets/images/login-signup-img.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+/* RIGHT FORM SECTION */
+.auth-form {
+  flex: 2;
+  background: #ffffff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-form h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.auth-form input {
+  width: 100%;              /* 🔥 YE LINE MAIN FIX HAI */
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+  padding: 12px 5px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+
+
+.auth-form input {
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+  padding: 12px 5px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  outline: none;
+}
+
+.auth-form button {
+  background: linear-gradient(90deg, #ec4899, #a855f7);
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-form button:hover {
+  opacity: 0.9;
+}
+
+.auth-form p {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.auth-form a {
+  color: #ec4899;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.checkbox input {
+  width: auto;
+  margin-top: 26px;
+  cursor: pointer;
+}
+
+.checkbox span {
+  color: #ec4899;
+  cursor: pointer;
+}
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+
+  .auth-image {
+    height: 40vh;
+    flex: none;
+  }
+
+  .auth-form {
+    padding: 40px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+
+  .auth-image {
+    display: none;
+  }
+
+  .auth-form {
+    width: 100%;
+    padding: 30px 25px;
+  }
+
+  .auth-form h2 {
+    font-size: 24px;
+  }
+
+  .auth-form input {
+    font-size: 14px;
+  }
+
+  .auth-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 25px 20px;
+  }
+
+  .auth-form h2 {
+    font-size: 22px;
+  }
+
+  .checkbox {
+    font-size: 12px;
+  }
+}

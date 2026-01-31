@@ -1,0 +1,189 @@
+/* ===== GLOBAL ===== */
+
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #1f2937;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Inputs global */
+input {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.dark input {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-color: #334155;
+}
+
+.dark input::placeholder {
+  color: #9ca3af;
+}
+
+/* ===== Navbar ===== */
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark .navbar {
+  background-color: #020617;
+}
+
+/* Title */
+.navbar-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.dark .navbar-title {
+  color: #ffffff;
+}
+
+/* Buttons */
+.navbar-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode button */
+.dark-toggle {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+}
+
+.dark-toggle:hover {
+  background-color: #f3f4f6;
+}
+
+.dark .dark-toggle {
+  border-color: #475569;
+  color: #ffffff;
+}
+
+.dark .dark-toggle:hover {
+  background-color: #1e293b;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.dark .logout-btn {
+  background-color: #b91c1c;
+}
+
+/* ===== Dashboard Page ===== */
+
+.dashboard {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  padding: 24px;
+}
+
+.dark .dashboard {
+  background-color: #0f172a;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.dark .dashboard-title {
+  color: #ffffff;
+}
+
+/* Create Resume Button */
+.create-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Search */
+.dashboard-search {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+/* Resume Grid */
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Resume Card (generic support) */
+.resume-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dark .resume-card {
+  background-color: #1e293b;
+  color: #e5e7eb;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  margin-top: 80px;
+  color: #6b7280;
+}
+
+.dark .empty-state {
+  color: #9ca3af;
+}
+
+.empty-state p:first-child {
+  font-size: 18px;
+  font-weight: 500;
+}
