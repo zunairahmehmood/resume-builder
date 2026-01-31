@@ -19,13 +19,6 @@ function Login() {
       didOpen: () => Swal.showLoading()
     });
 
-    // Swal.fire({
-    //   title: "Logging in...",
-    //   allowOutsideClick: false
-    // }).then(() => Swal.showLoading());
-
-
-
     try {
       await signInWithEmailAndPassword(auth, email, password);
 
@@ -49,7 +42,7 @@ function Login() {
     <div className="auth-wrapper">
       <div className="auth-image"></div>
       <div className="auth-form">
-        <h2>Login</h2>
+        <h2>Sign in</h2>
         <Input
           label="Email"
           type="email"
