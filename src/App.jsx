@@ -4,11 +4,13 @@ import Dashboard from "./pages/Dashboard";
 import CreateResume from "./pages/CreateResume";
 import PreviewResume from "./pages/PreviewResume";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import Signup from "./components/auth/Signup";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
 
       <Route
         path="/dashboard"
